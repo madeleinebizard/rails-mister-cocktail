@@ -22,42 +22,50 @@ ingredients['drinks'].each do |record|
   )
 end
 
-Cocktail.create!(
-  name: "Mojito",
-  image_url: "https://images.unsplash.com/photo-1547495706-7485ef02d47d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+image_url = URI.open("https://images.unsplash.com/photo-1547495706-7485ef02d47d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80")
+cocktail = Cocktail.create!(
+  name: "Mojito"
 )
+cocktail.photo.attach(io: image_url, filename: 'nes.png', content_type: 'image/png')
 
-Cocktail.create!(
-  name: "Gin",
-  image_url: "https://images.unsplash.com/photo-1453825012366-3738046cb6c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
+image_url = URI.open("https://images.unsplash.com/photo-1453825012366-3738046cb6c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80")
+cocktail = Cocktail.create!(
+  name: "Gin"
 )
+cocktail.photo.attach(io: image_url, filename: 'nes.png', content_type: 'image/png')
 
-Cocktail.create!(
+image_url = URI.open("https://images.unsplash.com/photo-1558950334-8d04704332f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80")
+cocktail = Cocktail.create!(
   name: "Martini Lemon",
-  image_url: "https://images.unsplash.com/photo-1558950334-8d04704332f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
 )
+cocktail.photo.attach(io: image_url, filename: 'nes.png', content_type: 'image/png')
 
-Cocktail.create!(
+image_url = URI.open("https://images.unsplash.com/photo-1511715112108-9acc6c3ff61f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
+cocktail = Cocktail.create!(
   name: "Lichy & Mint",
-  image_url: "https://images.unsplash.com/photo-1511715112108-9acc6c3ff61f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
 )
+cocktail.photo.attach(io: image_url, filename: 'nes.png', content_type: 'image/png')
 
-Cocktail.create!(
+image_url = URI.open("https://images.unsplash.com/photo-1558383738-8e44bbf6b093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
+cocktail = Cocktail.create!(
   name: "Peach Vodka & Strawberries",
-  image_url: "https://images.unsplash.com/photo-1558383738-8e44bbf6b093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
 )
+cocktail.photo.attach(io: image_url, filename: 'nes.png', content_type: 'image/png')
 
-Cocktail.create!(
+image_url = URI.open("https://images.unsplash.com/photo-1589661431228-c5319d8e904f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
+cocktail = Cocktail.create!(
   name: "Abricot Gin Tonic",
-  image_url: "https://images.unsplash.com/photo-1589661431228-c5319d8e904f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
 )
+cocktail.photo.attach(io: image_url, filename: 'nes.png', content_type: 'image/png')
 
-Cocktail.create!(
+image_url = URI.open("https://images.unsplash.com/photo-1589881418399-b974d8bebef8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
+cocktail = Cocktail.create!(
   name: "Banana & Lemon",
-  image_url: "https://images.unsplash.com/photo-1589881418399-b974d8bebef8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
 )
+cocktail.photo.attach(io: image_url, filename: 'nes.png', content_type: 'image/png')
 
-Cocktail.create!(
+image_url = URI.open("https://images.unsplash.com/photo-1575761998883-4a6a7a39711f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
+cocktail = Cocktail.create!(
   name: "Ananas & Lemon Beer",
-  image_url: "https://images.unsplash.com/photo-1575761998883-4a6a7a39711f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
 )
+cocktail.photo.attach(io: image_url, filename: 'nes.png', content_type: 'image/png')

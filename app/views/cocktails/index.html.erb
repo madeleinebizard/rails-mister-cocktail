@@ -1,0 +1,20 @@
+<nav class="navbar sticky-top navbar-light bg-light">
+  <a class="navbar-brand" href="#">Mister Cocktail</a>
+</nav>
+
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1575444758702-4a6b9222336e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)">
+  Check out our cocktails!
+</div>
+
+<div class="cards">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card" style="width: 18rem;">
+      <img-tag class="card-img-top" src=""  alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><%= cocktail.name %></h5>
+        <p> <%= link_to 'Click to learn more about me!', cocktail %> </p>
+      </div>
+    </div>
+  <% end %>
+</div>
+<%= link_to "Add a cocktail", new_cocktail_path %>

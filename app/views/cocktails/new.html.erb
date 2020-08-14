@@ -1,0 +1,12 @@
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.input :name %>
+  <%= f.submit %>
+<% end %>
+
+<ul class="list-group">
+  <% @cocktail.doses.each do |dose| %>
+    <li class="list-group-item"><%= dose.description %></li>
+    <li class="list-group-item"><%= dose.cocktail %></li>
+    <li class="list-group-item"><%= dose.ingredient %></li>
+  <% end %>
+</ul>
